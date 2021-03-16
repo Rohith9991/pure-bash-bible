@@ -8,6 +8,7 @@ test_trim_string() {
     assert_equals "$result" "Hello,    World"
 }
 
+
 test_trim_all() {
     result="$(trim_all "    Hello,    World    ")"
     assert_equals "$result" "Hello, World"
